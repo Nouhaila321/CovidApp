@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="col-md-10 px-0">    
+      <h2 class="display-4 font-italic">
+		Make this situation a good opportunity to develop yourself
+      </h2>
+      <p class="lead my-6">
+       You will spend a lot of time at home in the coming days through lockdown and extended Work-From-Home (WFH) while the virus battle rages. Use this opportunity to invest in life-changing skills to forever accelerate growth.
+      </p>
+    </div> 
+    <div class="col-md-8 px-2">
+    	<p class="lead my-8" color='#AD46E4'> 
+    		This is a list of Free courses that you can start with them 
+      	</p>
+      	<ul class="list-group">
+      	<li class="list-group-item list-group-item-dark" >Online FREE courses</li>
+		{% for idea in ideas %}
+  			{% if idea[2] == "Online FREE courses" %}
+  			
+  				<table>
+  					<td>{{idea[1]}}</td>
+  					<td>
+  						<a href= {{idea[5]}} >LINK TO THE COURSE </a>
+  					</td>
+  				</table>			        
+			{% endif  %}
+		{% endfor %}
+		<li class="list-group-item list-group-item-dark">Helpful INSTAGRAME Profil</li>
+		{% for idea in ideas %}
+			{% if idea[2] == "Helpful INSTAGRAME Profil" %}
+			 
+  				<table>
+  					<td>{{idea[1]}}</td>
+  					<td>
+  						<a href= "{{idea[5]}}" >LINK TO INSTAGRAME Profil </a>
+  					</td>
+  				</table>			        
+			{% endif  %}
+		{% endfor %}
+		</ul>
+    </div>
+      
+{% endblock content %}
