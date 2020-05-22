@@ -48,4 +48,20 @@ And for handle with this situation, and to benifit from this quarantine, the web
  #### 5-Configure Apache web server
  ![](images/5.jpg)
  
+ Now we just have to configure our server by adding the code and configur some files:
+  - Add the following line to the very end of the file '/etc/httpd/conf/httpd.conf' 
+    IncludeOptional sites-enabled/*.conf
+  - Create 2 folders: /etc/httpd/sites-available /etc/httpd/sites-enabled and 
+      * create a new file in the sites-available directory: 
+        <VirtualHost *:80>
+            ServerName www.example.com
+            ServerAlias example.com
+            DocumentRoot /var/www/example.com/html
+            ErrorLog /var/www/example.com/log/error.log
+            CustomLog /var/www/example.com/log/requests.log combined
+       </VirtualHost>
+      * create a symbolic link in the sites-enabled directory.
+      
+This will tell Apache where to find the root directly that holds the publicly accessible web documents. It also tells Apache where   to store error and request logs for this particular site. 
+
   ![](images/6.jpg)  ![](images/7.jpg)
