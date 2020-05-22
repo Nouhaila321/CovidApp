@@ -19,8 +19,7 @@ And for handle with this situation, and to benifit from this quarantine, the web
   * groupinstall 'development tools'
   
 #### 2-Import file project (using FTP)  
-![](images/1.png)
-<img src="images/1.png" width="40%">
+![](images/1.jpg)
  
  #### 3-Install python packages
  * flask
@@ -30,18 +29,18 @@ And for handle with this situation, and to benifit from this quarantine, the web
  * pandas
  * sqlalchemy
  * pymysql
-   ![](images/3)
+   ![](images/3.jpg)
    
  #### 4-Create the Database and Import the data from coronavirus.sql 
   mysql -u root -p
   CREATE DATABASE coronavirus;
   exit
   mysql -u root -p coronavirus < coronavirus.sql
-  ![](images/2)
+  ![](images/2.jpg)
   
   After we run scraping_infoWORLD.py to scrap the data
-  ![](images/4)
+  ![](images/4.jpg)
   
  #### 5-Configure Apache web server
- ![](images/5)
+ ![](images/5.jpg)
  
