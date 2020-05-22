@@ -31,9 +31,6 @@ sudo firewall-cmd --permanent --add-service=https
 sudo firewall-cmd --reload
 sudo systemctl start httpd
 
-mkdir -p /var/www/covidApp/html
-mkdir -p /var/www/covidApp/log
 
-chown -R $USER:$USER /var/www/covidApp/html
-chmod -R 755 /var/www
+
 
