@@ -7,5 +7,40 @@ I have use scraping with python to get data about the lasts updates of Covid-19 
 Also the web service contien a feature to give informations and an importantes services relatives with Covid-19 in Morocoo.
 And for handle with this situation, and to benifit from this quarantine, the website gives an interestings ideas to do in this special time.
 
+## Steps to reproduce up the application in Centos7:
 
-
+#### 1/ Install all the necessary packages:
+  * mariadb-devel
+  * mysql-server
+  * libmysqlclient-dev
+  * python3-paramiko
+  * python3 
+  * python3-devel
+  * groupinstall 'development tools'
+  
+#### 2/ Import file project (using FTP)  
+![](/images/1)
+ 
+ #### 3/ Install python packages
+ * flask
+ * flask_mysqldb
+ * BeautifulSoup
+ * requests
+ * pandas
+ * sqlalchemy
+ * pymysql
+   ![](/images/3)
+   
+ #### 4/ Create the Database and Import the data from coronavirus.sql 
+  mysql -u root -p
+  CREATE DATABASE coronavirus;
+  exit
+  mysql -u root -p coronavirus < coronavirus.sql
+  ![](/images/2)
+  
+  After we run scraping_infoWORLD.py to scrap the data
+  ![](/images/4)
+  
+ #### 5/ Configure Apache web server
+ ![](/images/5)
+ 
