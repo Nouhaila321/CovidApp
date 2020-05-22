@@ -1,0 +1,39 @@
+#?/bin/bash 
+
+yum update 
+yum install mariadb-devel
+yum install mysql-server
+yum install libmysqlclient-dev
+systemctl start mysqld.service
+mysql_secure_installation
+
+mysql -u root -p
+CREATE DATABASE coronavirus;
+exit
+mysql -u root -p coronavirus < coronavirus.sql
+
+yum install python3-paramiko
+yum install python3 
+
+yum install python3-devel
+yum groupinstall 'development tools'
+
+pip3 flask
+pip3 flask_mysqldb
+pip3 BeautifulSoup
+pip3 requests
+pip3 pandas
+pip3 sqlalchemy
+pip3 pymysql
+
+yum install httpd
+sudo firewall-cmd --permanent --add-service=https
+sudo firewall-cmd --reload
+sudo systemctl start httpd
+
+mkdir -p /var/www/covidApp/html
+mkdir -p /var/www/covidApp/log
+
+chown -R $USER:$USER /var/www/covidApp/html
+chmod -R 755 /var/www
+
