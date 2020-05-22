@@ -19,7 +19,7 @@ And for handle with this situation, and to benifit from this quarantine, the web
   * groupinstall 'development tools'
   
 #### 2-Import file project (using FTP)  
-![](images/1)
+![](./images/1)
  
  #### 3-Install python packages
  * flask
