@@ -53,16 +53,17 @@ And for handle with this situation, and to benifit from this quarantine, the web
     IncludeOptional sites-enabled/*.conf
   - Create 2 folders: /etc/httpd/sites-available /etc/httpd/sites-enabled and 
       * create a new file in the sites-available directory: 
+      
+<Start>
+ 
         <VirtualHost *:80>
-        
             ServerName covidapp
             ServerAlias covidapp
             DocumentRoot /var/www/covidapp/templates
             ErrorLog /var/www/covidapp/log/error.log
             CustomLog /var/www/covidapp/log/requests.log combined
-            
-       </VirtualHost>
-       
+      </VirtualHost>
+</Start>       
       * create a symbolic link in the sites-enabled directory.
       
 This will tell Apache where to find the root directly that holds the publicly accessible web documents. It also tells Apache where   to store error and request logs for this particular site. 
