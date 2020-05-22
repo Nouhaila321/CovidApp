@@ -9,7 +9,7 @@ And for handle with this situation, and to benifit from this quarantine, the web
 
 ## Steps to reproduce up the application in Centos7:
 
-#### 1/ Install all the necessary packages:
+#### 1-Install all the necessary packages:
   * mariadb-devel
   * mysql-server
   * libmysqlclient-dev
@@ -18,10 +18,10 @@ And for handle with this situation, and to benifit from this quarantine, the web
   * python3-devel
   * groupinstall 'development tools'
   
-#### 2/ Import file project (using FTP)  
+#### 2-Import file project (using FTP)  
 ![](/images/1)
  
- #### 3/ Install python packages
+ #### 3-Install python packages
  * flask
  * flask_mysqldb
  * BeautifulSoup
@@ -31,7 +31,7 @@ And for handle with this situation, and to benifit from this quarantine, the web
  * pymysql
    ![](/images/3)
    
- #### 4/ Create the Database and Import the data from coronavirus.sql 
+ #### 4-Create the Database and Import the data from coronavirus.sql 
   mysql -u root -p
   CREATE DATABASE coronavirus;
   exit
@@ -41,6 +41,6 @@ And for handle with this situation, and to benifit from this quarantine, the web
   After we run scraping_infoWORLD.py to scrap the data
   ![](/images/4)
   
- #### 5/ Configure Apache web server
+ #### 5-Configure Apache web server
  ![](/images/5)
  
