@@ -48,3 +48,4 @@ And for handle with this situation, and to benifit from this quarantine, the web
  #### 5-Configure Apache web server
  ![](images/5.jpg)
  
+  ![](images/6.jpg)  ![](images/7.jpg)
