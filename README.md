@@ -20,6 +20,7 @@ And for handle with this situation, and to benifit from this quarantine, the web
   
 #### 2-Import file project (using FTP)  
 ![](images/1.png)
+<img src="images/1.png" width="40%">
  
  #### 3-Install python packages
  * flask
