@@ -54,11 +54,13 @@ And for handle with this situation, and to benifit from this quarantine, the web
   - Create 2 folders: /etc/httpd/sites-available /etc/httpd/sites-enabled and 
       * create a new file in the sites-available directory: 
         <VirtualHost *:80>
+        
             ServerName covidapp
             ServerAlias covidapp
             DocumentRoot /var/www/covidapp/templates
             ErrorLog /var/www/covidapp/log/error.log
             CustomLog /var/www/covidapp/log/requests.log combined
+            
        </VirtualHost>
        
       * create a symbolic link in the sites-enabled directory.
